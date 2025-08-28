@@ -1,5 +1,5 @@
 # Sử dụng Tomcat với JDK 17
-FROM tomcat:10.1-jdk17
+FROM tomcat:9.0-jdk17
 
 # Xóa webapps mặc định nếu muốn
 RUN rm -rf /usr/local/tomcat/webapps/*
