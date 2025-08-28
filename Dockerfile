@@ -5,7 +5,7 @@ FROM tomcat:10.1-jdk17
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy file WAR từ target vào Tomcat (ROOT.war để chạy trên /)
-COPY target/ch04_ex1_survey_sol-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
+COPY dist/ch04_ex1_survey_sol.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose port cho Render
 EXPOSE 8080
